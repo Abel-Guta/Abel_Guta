@@ -66,7 +66,7 @@ export const projects: Project[] = [
         title: "AI-Job Preparation Platform",
         description: "AI-driven platform designed to help users prepare for job interviews and skill-building through interactive voice sessions, AI-generated questions, and personalized learning paths.",
         time: "on going",
-        thumbnail: "/PrepWise.png",
+        thumbnail: "/prepWise.png",
         tags: ["Next.js", "Firebase", "Google Gemini 2.0", "VAPI", "TypeScript", "Tailwind CSS", "Zustand", "ShadCN UI"],
         links: [ {
                 icon: <ProjectorIcon />,
