@@ -40,15 +40,15 @@ export const metadata: Metadata = {
   title: "Abel Guta Portfolio",
   generator: "Abel Guta",
   description: "Abel Guta's Portfolio Website",
-  metadataBase: new URL('https://henokasaye.vercel.app/'),
+  metadataBase: new URL('https://abel-guta.com/'),
   keywords: [
     "Software Engineer", "fullstack developer", "web developer", "programmer", "problem solver",
-    "nathnael dereje", "freelancer"
+    "abel guta", "freelancer"
   ],
   authors: [
     {
       name: "Abel Guta",
-      url: "https://henokasaye.vercel.app/"
+      url: "https://abel-guta.com/"
     }
   ],
   creator: "Abel Guta",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
-    url: "https://henok-asaye.vercel.app/",
+    url: "https://abel-guta.com/",
   },
   robots: {
     index: true,

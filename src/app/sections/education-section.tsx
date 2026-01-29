@@ -3,8 +3,6 @@
 import { Element } from "react-scroll";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 type education = {
@@ -16,7 +14,7 @@ type education = {
 }
 
 export const EducationSection = () => {
-    const [isExpanded, setIsExpanded] = useState(false);
+    // const [isExpanded, setIsExpanded] = useState(false);
 
     const education: education[] = [
         {
@@ -46,40 +44,9 @@ export const EducationSection = () => {
                     )}
 
                     {/* Collapsible Section */}
-                    <AnimatePresence>
-                        {isExpanded && (
-                            <motion.div
-                                initial={{ height: 0, opacity: 0 }}
-                                animate={{ height: "auto", opacity: 1 }}
-                                exit={{ height: 0, opacity: 0 }}
-                                transition={{ duration: 0.4, ease: "easeInOut" }}
-                                className="overflow-hidden mt-4 space-y-6"
-                            >
+                    {/* Collapsible Section removed due to unused state */}
 
-                                {EducationList(
-                                    education.filter(edu => !edu.ongoing),
-                                    "border-l-4 border-gray-300 pl-4"
-                                )}
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
-
-                    {/* Toggle Button */}
-                    {/* <Button
-                        variant={"outline"}
-                        aria-label="Show More or Show Less"
-                        onClick={() => setIsExpanded(!isExpanded)}
-                        className="mt-6 flex items-center font-medium hover:underline"
-                    >
-                        {isExpanded ? "Show Less" : "Show More"}
-                        <motion.div
-                            animate={{ rotate: isExpanded ? 180 : 0 }}
-                            transition={{ duration: 0.3 }}
-                            className="ml-2"
-                        >
-                            <ChevronDown size={20} />
-                        </motion.div>
-                    </Button> */}
+                    {/* Toggle Button removed due to unused state */}
                 </div>
             </section>
         </Element>
